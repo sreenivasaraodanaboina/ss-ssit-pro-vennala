@@ -1,0 +1,113 @@
+/* nav section start */
+.nav-container{
+    width: 100%;
+    background-color: var(--clr-black-90);
+    min-height: 50px;
+  top: -70px;
+   
+    transition: var(--transition);
+  
+  }
+  .nav-container.stickey-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateY(0%);
+    transition: var(--transition);
+  
+  }
+  .nav-center{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+  
+  .hamburger{
+    width: 30px;
+  }
+  .university{
+    width: 30px;
+  }
+  .nav-links-main{
+    display: none;
+  }
+  .nav-social-links-main{
+    display: none;
+  }
+  @media  screen and (min-width:992px) {
+    .nav-container{
+      width: 100%;
+      background-color: var(--clr-black-90);
+      min-height: 70px;
+    }
+    .nav-links-main{
+      display: flex;}
+      .nav-social-links-main{
+        display: flex;}
+        .hamburger{
+          display: none;}
+          .nav-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            column-gap: 20px;
+          }
+          .nav-social-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            column-gap: 20px;
+          }
+          .nav-center{
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+         .nav-link{
+          letter-spacing: 1px;
+          color: var(--clr-white);
+          font-weight: bold;
+          text-transform: capitalize;
+          padding: 10px;
+          border-radius: 5px;
+         }
+         .nav-link-active{
+          letter-spacing: 1px;
+          color: var(--clr-black-90);
+          background-color: var(--clr-white);
+          text-transform: capitalize;
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: bold;
+        
+          
+         }
+         .nav-social-link{
+          width: 35px;
+          border: solid white 1px;
+          padding: 8px;
+          border-radius: 50%;
+  
+          }
+          .nav-link:hover{
+            color: var(--clr-black-90);
+          background-color: var(--clr-white);
+          transition: var(--transition);
+          }
+          .nav-social-link:hover{
+            transition: var(--transition);
+            transform: translateY(-4px);
+  
+          }
+  
+        }
+  
+  
+  
+    /* nav section end */

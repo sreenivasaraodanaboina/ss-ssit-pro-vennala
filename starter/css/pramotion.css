@@ -1,0 +1,91 @@
+
+    /*pramotion section start  */
+  
+    .pramotion-section-heading{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        color: var(--clr-primary-light);
+        margin-top: 50px;
+
+      }
+      .underline{
+        width: 60px;
+        height: 5px;
+        background: var(--clr-primary-light);
+        justify-self: center;
+        margin-bottom: 20px;
+        margin-top: 20px;}
+
+    .pramotion-container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .pramotion-heading{
+      color: var(--clr-white);
+      font-size: 30px;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+    .pramotion-image-container{
+      aspect-ratio: 300/350;
+      object-fit: cover;
+      overflow: hidden;
+      position: relative;
+    }
+    .pramotion-image-container::before{
+      content: "";
+      background: var(--clr-black-80);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+    }
+    
+    .pramotion-image-container img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .pramotion-content-container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      text-overflow: clip;
+      object-fit: cover;
+      overflow: hidden;
+      position: absolute;
+      left: 20%;
+      right:20% ;
+      row-gap: 30px;
+    }
+    .pramotion-container{
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width:769px) {
+     
+      .pramotion-image-container{
+        aspect-ratio: 300/100;
+      }
+      .pramotion-image-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      .pramotion-heading{
+        color: var(--clr-white);
+        font-size: 40px;
+      }
+    }
+    
+    
+     
+     
+     /*pramotion section end */

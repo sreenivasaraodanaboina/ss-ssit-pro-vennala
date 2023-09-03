@@ -1,0 +1,71 @@
+
+    /* side bar section start */
+  
+    .sidebar-container{
+        background-color: var(--clr-black);
+        position: fixed;
+        top: 0;
+        left: -100%;
+      transition:all 0.5s linear;;
+        width: 100%;
+        height: 100%;
+      }
+      .sidebar-container.stickey-sidebar{
+        z-index: 10;
+        left: 0%;
+        transition: all 0.5s linear;
+      }
+      
+      .university{
+        width: 30px;
+      }
+      .close-button{
+        width: 30px;
+      }
+      .sidebar-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+      }
+      .sidebar-links-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 100px;
+        
+      }
+      .sidebar-links{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+      }
+      .sidebar-link{
+        letter-spacing: 1px;
+        color: var(--clr-white);
+        font-weight: bold;
+        text-transform: capitalize;
+        border-radius: 5px;
+        padding: 10px;
+        
+      }
+      .sidebar-link-active{
+        letter-spacing: 1px;
+        color: var(--clr-black-90);
+        background-color: var(--clr-white);
+        text-transform: capitalize;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+      
+      }
+      .sidebar-link:hover{
+        color: var(--clr-black-90);
+      background-color: var(--clr-white);
+      transition: var(--transition);}
+      
+      
+        /* side bar section end */
+     

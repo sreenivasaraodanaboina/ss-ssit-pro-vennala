@@ -1,0 +1,89 @@
+ /* hero section start */
+ .hero-img-container{
+    aspect-ratio: 300/150;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .hero-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: auto;
+  }
+  .hero-heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--clr-white) !important;
+    text-align: center;
+  }
+  .her0-discription{
+    text-align: center;
+    text-transform: capitalize;
+    object-fit: cover;
+    overflow: hidden;
+    color: var(--clr-white);
+    font-weight: bold;
+    font-size: larger;
+  }
+  .her-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    background: var(--clr-primary);
+  }
+  @media  screen and (min-width:992px) {
+    .her-container .hero-img-container {
+      position: relative;
+      aspect-ratio: 300/150;
+    }
+    .her-container .hero-img-container::before{
+      content: "";
+      background: var(--clr-black-80);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .her-container .hero-content-container{
+      position: absolute;
+      background: transparent;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .hero-heading{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: var(--clr-white) !important;
+      text-align: center;
+      font-size: 40px;
+    }
+    
+  }
+  @media  screen and (min-width:769px) {
+    .hero-heading{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: var(--clr-white) !important;
+      text-align: center;
+      font-size: 60px;}
+      .her0-discription{
+        font-size: 30px;
+      }
+  }
+  /* hero section end */
